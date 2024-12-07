@@ -4,16 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bits & Cream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <!-- Header content -->
+<body class="bg-pink-50">
+  <header class="bg-pink-500 text-white sticky top-0">
+    <div class="flex justify-between items-center py-4 px-6">
+      <img class="w-32" src="./assets/images/Bits-logo-marca-21-blanco.svg" alt="Bits & Cream">
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="text-yellow-400">PRODUCTOS</a></li>
+          <li><a href="#">DESCUENTOS</a></li>
+          <li><a href="#">ACERCA DE BITS</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <!-- Main content -->
-  </main>
-  <footer>
-    <!-- Footer content -->
-  </footer>
+
+  <section class="relative w-full">
+    <img src="./assets/images/PORTADA-TV.jpg" alt="Hero image" class="w-full h-96 object-cover">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-30">
+      <h1 class="text-4xl font-bold">VIDA + BONITA</h1>
+      <a href="#" class="mt-4 px-6 py-2 bg-yellow-400 text-pink-500 font-semibold rounded-full hover:bg-yellow-500">
+        COMPRAR AHORA
+      </a>
+    </div>
+  </section>
+
 </body>
 </html>
