@@ -1,4 +1,8 @@
 
+/* bg-img */
+.bg-1 {
+    background-image: url("../assets/images/bg.jpg");
+  }
 
 
 /* inputs del login */
