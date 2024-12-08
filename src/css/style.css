@@ -4,6 +4,10 @@
     background-image: url("../assets/images/bg.jpg");
   }
 
+.bg-2{
+    background-image: url("../assets/images/Imagen-Acerca-de-Bits .jpg");
+    background-position: center;
+}
 
 /* inputs del login */
 input:invalid {
@@ -16,3 +20,8 @@ input:valid {
         1px solid #FF009C;
 }
 
+/* imagen del about para darle un top custom */
+.barrier{
+    top: 360px;
+
+}
