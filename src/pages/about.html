@@ -34,7 +34,7 @@
 
 
             <!-- Navbar -->
-            <nav class="hidden md:block p-0 m-0 font-bold ">
+            <nav class="hidden md:block p-0 m-0 font-semibold text-sm">
                 <ul class="flex space-x-6 ">
                     <li><a href="#" class="hover:opacity-75 transition duration-200 text-yellow-400">PRODUCTOS</a></li>
                     <li><a href="#" class="hover:opacity-75 transition duration-200">DESCUENTOS</a></li>
@@ -68,15 +68,15 @@
     <section class=" mx-auto py-12 px-6">
 
         <!-- md:grid-cols-2 -->
-        <div class="grid grid-cols-2  gap-8 items-center">
+        <div class="flex justify-center items-center pl-5">
             <!-- Imagen -->
-            <div class="flex justify-center">
+            <div class="flex justify-center hidden lg:block ">
                 <img src="../assets/images/Acerca-de-Bits.jpg " alt="Helados" class="w-64 md:w-96">
             </div>
 
             <div class="space-y-6 ">
                 <!-- primer bloque -->
-                <div class="flex items-center">
+                <div class="flex items-center justify-center">
                     <img class="w-20 p-2 mr-3" src="../assets/images/corazon-Punteo.jpg">
                     <div class="w-3/4">
                         <h2 class="text-pink-500 font-bold text-2xl">NUESTRA MISION</h2>
@@ -88,7 +88,7 @@
                 </div>
 
                 <!-- segundo bloque -->
-                <div class="flex items-center">
+                <div class="flex items-center justify-center">
                     <img class="w-20 p-2 mr-3" src="../assets/images/corazon-Punteo.jpg">
                     <div class="w-3/4">
                         <h2 class="text-pink-500 font-bold text-2xl">NUESTRA MISION</h2>
@@ -104,13 +104,13 @@
     </section>
 
     <!-- imagen absolute -->
-    <img class="w-full absolute barrier" src="../assets/images/barra.svg">
+    <img class="w-full hidden lg:block absolute barrier" src="../assets/images/barra.svg">
 
     <!-- Segunda sección  -->
-    <section class="flex w-full justify-around bg-2 h-96 items-center">
+    <section class="flex w-full justify-around bg-2 h-96 items-center p- mt-8 flex-col md:flex-row">
 
         <!-- Card 1 -->
-        <div class=" rounded-lg shadow-lg p-3 w-1/4 bg-pink-50">
+        <div class=" rounded-lg shadow-lg p-3 md:w-1/4 bg-pink-50 ">
             <h3 class="text-pink-500 font-bold text-md mb-4 text-center">NUESTROS COMIENZOS</h3>
             <p class="text-gray-700 text-sm text-justify">
                 Nuestra historia se remonta al año 2000, cuando empezamos en la ciudad de Santa Cruz de la Sierra, con
@@ -119,7 +119,7 @@
             </p>
         </div>
         <!-- Card 2 -->
-        <div class=" rounded-lg shadow-lg p-3 w-1/4 bg-pink-50">
+        <div class=" rounded-lg shadow-lg p-3 md:w-1/4 bg-pink-50">
             <h3 class="text-pink-500 font-bold text-md mb-4 text-center">NUESTRO DESARROLLO</h3>
             <p class="text-gray-700 text-sm text-justify">
                 Nuestro éxito se creó a través del boca a boca gracias a la calidad de nuestros productos, no tardamos
@@ -128,7 +128,7 @@
             </p>
         </div>
         <!-- Card 3 -->
-        <div class=" rounded-lg shadow-lg p-3 w-1/4 bg-pink-50">
+        <div class=" rounded-lg shadow-lg p-3 md:w-1/4 bg-pink-50">
             <h3 class="text-pink-500 font-bold text-md mb-4 text-center">NUESTRA EVOLUCIÓN</h3>
             <p class="text-gray-700 text-sm text-justify">
                 Desde nuestros inicios fuimos innovadores, siendo la primera heladería en Bolivia en proponer los
@@ -155,33 +155,29 @@
         </div>
 
         <!-- Tabla -->
-        <div class="overflow-x-auto">
             <table class="min-w-full border border-gray-200 rounded-lg shadow-md">
 
                 <!-- encabezado de la tabla -->
                 <tr class="bg-pink-100 text-pink-600">
-                    <th class="text-left py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">
-                        Sabor</th>
-                    <th class="text-left py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">
-                        Descripción</th>
-                    <th class="text-center py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">
-                        Precio</th>
-                    <th class="text-center py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">
-                        Seleccionar</th>
+                    <th class="text-left py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">Sabor</th>
+                    <!-- <th class="text-left py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200 hidden md:block">
+                        Descripción</th> -->
+                    <th class="text-center py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">Precio</th>
+                    <th class="text-center py-3 px-6 font-semibold uppercase text-sm border-b border-gray-200">Seleccionar</th>
                 </tr>
 
                 <tbody>
                     <!-- Fila 1 -->
-                    <tr class="hover:bg-pink-50">
+                    <tr class="hover:bg-pink-50  " >
 
                         <td class="py-4 px-6 text-pink-500 border-b border-gray-200 flex items-center">
-                            <img src="../assets/images/about-flavours/fresas.jpg" alt="Helado de Fresa"
+                            <img src="../assets/images/about-flavours/fresas.jpg" 
                                 class="w-12 h-12 rounded-full mr-4">
                             Fresa
                         </td>
 
-                        <td class="text-gray-600 border-b border-gray-200 text-justify">Un delicioso helado cremoso con
-                            el sabor auténtico de fresas naturales.</td>
+                        <!-- <td class="text-gray-600 border-b border-gray-200 text-justify hidden md:block">Un delicioso helado cremoso con
+                            el sabor auténtico de fresas naturales.</td> -->
                         <td class="text-center text-pink-500 font-bold border-b border-gray-200">3.50 € </td>
                         <td class="text-center border-b border-gray-200">
                             <button
@@ -195,13 +191,13 @@
                     <tr class="hover:bg-pink-50">
 
                         <td class="py-4 px-6 text-pink-500 border-b border-gray-200 flex items-center">
-                            <img src="../assets/images/about-flavours/choco.jpg" alt="Helado de Fresa"
+                            <img src="../assets/images/about-flavours/choco.jpg" 
                                 class="w-12 h-12 rounded-full  mr-4">
                             Chocolate
                         </td>
 
-                        <td class="text-gray-600 border-b border-gray-200 text-justify ">Rico y cremoso, elaborado con
-                            el mejor chocolate belga.</td>
+                        <!-- <td class="text-gray-600 border-b border-gray-200 text-justify hidden md:block">Rico y cremoso, elaborado con
+                            el mejor chocolate belga.</td> -->
                         <td class="text-center text-pink-500 font-bold border-b border-gray-200">4.50 € </td>
                         <td class="text-center border-b border-gray-200">
                             <button
@@ -215,13 +211,13 @@
                     <tr class="hover:bg-pink-50">
 
                         <td class="py-4 px-6 text-pink-500 border-b border-gray-200 flex items-center">
-                            <img src="../assets/images/about-flavours/vainilla.jpg" alt="Helado de Fresa"
+                            <img src="../assets/images/about-flavours/vainilla.jpg" 
                                 class="w-12 h-12 rounded-full  mr-4">
                             Vainilla
                         </td>
 
-                        <td class="text-gray-600 border-b border-gray-200 text-justify ">El clásico sabor a vainilla,
-                            suave y cremoso, ideal para cualquier ocasión.</td>
+                        <!-- <td class="text-gray-600 border-b border-gray-200 text-justify hidden md:block">El clásico sabor a vainilla,
+                            suave y cremoso, ideal para cualquier ocasión.</td> -->
                         <td class="text-center text-pink-500 font-bold border-b border-gray-200">4.50 € </td>
                         <td class="text-center border-b border-gray-200">
                             <button
@@ -236,14 +232,14 @@
                     <tr class="hover:bg-pink-50">
 
                         <td class="py-4 px-6 text-pink-500 border-b border-gray-200 flex items-center">
-                            <img src="../assets/images/about-flavours/cookies.jpg" alt="Helado de Fresa"
+                            <img src="../assets/images/about-flavours/cookies.jpg" 
                                 class="w-12 h-12 rounded-full  mr-4">
                             <!-- rounded-full, para que no se vea feo con el hover -->
                             Cookies
                         </td>
 
-                        <td class="text-gray-600 border-b border-gray-200 text-justify ">Un helado muy dulce con sabor
-                            al de tus galletas favoritas.</td>
+                        <!-- <td class="text-gray-600 border-b border-gray-200 text-justify hidden md:block">Un helado muy dulce con sabor
+                            al de tus galletas favoritas.</td> -->
                         <td class="text-center text-pink-500 font-bold border-b border-gray-200">4.50 € </td>
                         <td class="text-center border-b border-gray-200">
                             <button
@@ -253,7 +249,6 @@
                         </td>
                     </tr>
             </table>
-        </div>
     </section>
 
     <section class="text-center py-16 px-4 bg-pink-50 flex flex-col items-center">
